@@ -1,0 +1,27 @@
+{
+    "name": "profitrobots-mq5-snippets",
+    "displayName": "ProfitRobots MQL5/MT5/MetaTrader 5 Snippets",
+    "description": "ProfitRobots MQL5/MT5/MetaTrader 5 Snippets for Visual Studio Code",
+    "homepage": "https://github.com/sibvic/vsc-mq5-snippets",
+    "version": "1.0.0",
+    "publisher": "sibvic",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^0.10.1"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "mq5",
+                "path": "./snippets/mq5-snippets.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sibvic/vsc-mq5-snippets.git"
+    }
+}

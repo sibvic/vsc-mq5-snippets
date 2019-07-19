@@ -1,0 +1,8 @@
+{
+    "IndicatorRelease": {
+        "body": "IndicatorRelease(${1:indicator_handle});",
+        "description": "Releases indicator handler",
+        "prefix": "IndicatorRelease",
+        "scope": "source.mq5"
+    }
+}
