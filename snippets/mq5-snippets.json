@@ -5,6 +5,24 @@
         "prefix": "IndicatorRelease",
         "scope": "source.mq4"
     },
+    "CustomIndicator": {
+        "body": "${1:handle} = iCustom(${2:_Symbol}, ${3:_Period}, \"::Indicators\\\\\\\\${4:indicatorName}\", ${5:params});",
+        "description": "MT5: Create custom indicator",
+        "prefix": "CustomIndicator",
+        "scope": "source.mq4"
+    },
+    "CopyBuffer": {
+        "body": 
+        [
+            "double ${5:buffer}[${4:count}];",
+            "if (CopyBuffer(${1:indicator_handle}, ${2:buffer_num}, ${3:start_pos_or_time}, ${4:count}, ${5:buffer}) == ${4:count})",
+            "{",
+            "}"
+        ],
+        "description": "MT5: Copy indicator's buffer",
+        "prefix": "CopyBuffer",
+        "scope": "source.mq4"
+    },
     "OnCalculate": {
         "body":
         [
@@ -42,7 +60,7 @@
             "}",
             "int OnInit(void)",
             "{",
-            "   IndicatorName = GenerateIndicatorName(\"{1:Name}\");",
+            "   IndicatorName = GenerateIndicatorName(\"${1:Name}\");",
             "   IndicatorObjPrefix = \"__\" + IndicatorName + \"__\";",
             "   IndicatorSetString(INDICATOR_SHORTNAME, IndicatorName);",
             "   IndicatorSetInteger(INDICATOR_DIGITS, Digits());",
@@ -63,6 +81,15 @@
         ],
         "description": "MT5: OnDeinit function",
         "prefix": "OnDeinit",
+        "scope": "source.mq4"
+    },
+    "enumDrawType": {
+        "body":
+        [
+            "${1|DRAW_NONE,DRAW_LINE,DRAW_SECTION,DRAW_HISTOGRAM,DRAW_HISTOGRAM2,DRAW_ARROW,DRAW_ZIGZAG,DRAW_FILLING,DRAW_BARS,DRAW_CANDLES,DRAW_COLOR_LINE,DRAW_COLOR_SECTION,DRAW_COLOR_HISTOGRAM,DRAW_COLOR_HISTOGRAM2,DRAW_COLOR_ARROW,DRAW_COLOR_ZIGZAG,DRAW_COLOR_BARS,DRAW_COLOR_CANDLES|}"
+        ],
+        "description": "MT5: Lookup PLOT_DRAW_TYPE value",
+        "prefix": "enumDrawType",
         "scope": "source.mq4"
     }
 }

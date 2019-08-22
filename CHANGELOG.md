@@ -5,6 +5,9 @@
 * OnCalculate
 * OnInit
 * OnDeinit
+* enumDrawType
+* CustomIndicator
+* CopyBuffer
 
 ## 1.0
 
