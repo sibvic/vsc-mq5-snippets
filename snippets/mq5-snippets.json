@@ -20,7 +20,10 @@
             "                const int& spread[]          // Spread array",
             ")",
             "{",
-            "   //TODO",
+            "   for (int pos = prev_calculated; pos < rates_total; ++pos)",
+            "   {",
+            "   }",
+            "   return rates_total;",
             "}"
         ],
         "description": "MT5: OnCalculate function",
@@ -30,8 +33,19 @@
     "OnInit": {
         "body":
         [
+            "string IndicatorName;",
+            "string IndicatorObjPrefix;",
+            "string GenerateIndicatorName(const string target)",
+            "{",
+            "   string name = target;",
+            "   return name;",
+            "}",
             "int OnInit(void)",
             "{",
+            "   IndicatorName = GenerateIndicatorName(\"{1:Name}\");",
+            "   IndicatorObjPrefix = \"__\" + IndicatorName + \"__\";",
+            "   IndicatorSetString(INDICATOR_SHORTNAME, IndicatorName);",
+            "   IndicatorSetInteger(INDICATOR_DIGITS, Digits());",
             "   return INIT_SUCCEEDED;//INIT_FAILED",
             "}"
         ],
@@ -44,7 +58,7 @@
         [
             "void OnDeinit(const int reason)",
             "{",
-            "   //TODO",
+            "   ObjectsDeleteAll(0, IndicatorObjPrefix);",
             "}"
         ],
         "description": "MT5: OnDeinit function",
