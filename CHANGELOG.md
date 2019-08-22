@@ -4,6 +4,7 @@
 
 * OnCalculate
 * OnInit
+* OnDeinit
 
 ## 1.0
 

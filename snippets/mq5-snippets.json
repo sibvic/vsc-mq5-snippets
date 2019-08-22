@@ -38,5 +38,17 @@
         "description": "MT5: OnInit function",
         "prefix": "OnInit",
         "scope": "source.mq4"
+    },
+    "OnDeinit": {
+        "body":
+        [
+            "void OnDeinit(const int reason)",
+            "{",
+            "   //TODO",
+            "}"
+        ],
+        "description": "MT5: OnDeinit function",
+        "prefix": "OnDeinit",
+        "scope": "source.mq4"
     }
 }
