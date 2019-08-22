@@ -10,7 +10,7 @@
         [
             "int OnCalculate(const int rates_total,       // size of input time series",
             "                const int prev_calculated,   // number of handled bars at the previous call",
-            "                const datetime& time{},      // Time array",
+            "                const datetime& time[],      // Time array",
             "                const double& open[],        // Open array",
             "                const double& high[],        // High array",
             "                const double& low[],         // Low array",
