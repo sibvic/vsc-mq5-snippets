@@ -91,5 +91,31 @@
         "description": "MT5: Lookup PLOT_DRAW_TYPE value",
         "prefix": "enumDrawType",
         "scope": "source.mq4"
+    },
+    "createTextObject": {
+        "body":
+        [
+            "string ${1:id} = IndicatorObjPrefix + \"${2:textId}\";",
+            "if (ObjectFind(${3:chart_ID}, ${1:id}) == -1)",
+            "{",
+            "   if (ObjectCreate(${3:chart_ID}, ${1:id}, OBJ_TEXT, ${4:sub_window}, ${5:time}, ${6:price}))",
+            "   {",
+            "      ObjectSetString(${3:chart_ID}, ${1:id}, OBJPROP_FONT, ${7:font});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_FONTSIZE, ${8:font_size});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_COLOR, ${9:clr});",
+            "      ObjectSetDouble(${3:chart_ID}, ${1:id}, OBJPROP_ANGLE, ${11:angle});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_ANCHOR, ${12:anchor});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_BACK, ${13:back});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_SELECTABLE, ${14:selection});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_SELECTED, ${15:selection});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_HIDDEN, ${16:hidden});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_ZORDER, ${17:z_order});",
+            "   }",
+            "}",
+            "ObjectSetString(${3:chart_ID}, ${1:id}, OBJPROP_TEXT, ${10:text});"
+        ],
+        "description": "MT5: Lookup PLOT_DRAW_TYPE value",
+        "prefix": "createTextObject",
+        "scope": "source.mq4"
     }
 }
