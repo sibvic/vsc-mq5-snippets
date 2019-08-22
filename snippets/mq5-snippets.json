@@ -1,8 +1,42 @@
 {
     "IndicatorRelease": {
         "body": "IndicatorRelease(${1:indicator_handle});",
-        "description": "Releases indicator handler",
+        "description": "MT5: Releases indicator handler",
         "prefix": "IndicatorRelease",
-        "scope": "source.mq5"
+        "scope": "source.mq4"
+    },
+    "OnCalculate": {
+        "body":
+        [
+            "int OnCalculate(const int rates_total,       // size of input time series",
+            "                const int prev_calculated,   // number of handled bars at the previous call",
+            "                const datetime& time{},      // Time array",
+            "                const double& open[],        // Open array",
+            "                const double& high[],        // High array",
+            "                const double& low[],         // Low array",
+            "                const double& close[],       // Close array",
+            "                const long& tick_volume[],   // Tick Volume array",
+            "                const long& volume[],        // Real Volume array",
+            "                const int& spread[]          // Spread array",
+            ")",
+            "{",
+            "   //TODO",
+            "}"
+        ],
+        "description": "MT5: OnCalculate function",
+        "prefix": "OnCalculate",
+        "scope": "source.mq4"
+    },
+    "OnInit": {
+        "body":
+        [
+            "int OnInit(void)",
+            "{",
+            "   return INIT_SUCCEEDED;//INIT_FAILED",
+            "}"
+        ],
+        "description": "MT5: OnInit function",
+        "prefix": "OnInit",
+        "scope": "source.mq4"
     }
 }
