@@ -92,7 +92,7 @@
         "prefix": "enumDrawType",
         "scope": "source.mq4"
     },
-    "createTextObject": {
+    "createTextObjectMT5": {
         "body":
         [
             "string ${1:id} = IndicatorObjPrefix + \"${2:textId}\";",
@@ -104,7 +104,7 @@
             "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_FONTSIZE, ${8:font_size});",
             "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_COLOR, ${9:clr});",
             "      ObjectSetDouble(${3:chart_ID}, ${1:id}, OBJPROP_ANGLE, ${11:angle});",
-            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_ANCHOR, ${12:anchor});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_ANCHOR, ${12|ANCHOR_LEFT_UPPER,ANCHOR_LEFT,ANCHOR_LEFT_LOWER,ANCHOR_LOWER,ANCHOR_RIGHT_LOWER,ANCHOR_RIGHT,ANCHOR_RIGHT_UPPER,ANCHOR_UPPER,ANCHOR_CENTER|});",
             "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_BACK, ${13:back});",
             "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_SELECTABLE, ${14:selection});",
             "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_SELECTED, ${15:selection});",
@@ -115,7 +115,7 @@
             "ObjectSetString(${3:chart_ID}, ${1:id}, OBJPROP_TEXT, ${10:text});"
         ],
         "description": "MT5: Lookup PLOT_DRAW_TYPE value",
-        "prefix": "createTextObject",
+        "prefix": "createTextObjectMT5",
         "scope": "source.mq4"
     }
 }
