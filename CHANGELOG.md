@@ -8,6 +8,8 @@
 * enumDrawType
 * CustomIndicator
 * CopyBuffer
+* Stochastic
+* createStreamMT5
 
 ## 1.0
 

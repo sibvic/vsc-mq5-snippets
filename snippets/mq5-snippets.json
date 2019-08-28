@@ -5,10 +5,34 @@
         "prefix": "IndicatorRelease",
         "scope": "source.mq4"
     },
-    "CustomIndicator": {
+    "IndicatorReleaseClipboard": {
+        "body": "IndicatorRelease(${CLIPBOARD:indicator_handle});",
+        "description": "MT5: Releases indicator handler",
+        "prefix": "IndicatorReleaseClipboard",
+        "scope": "source.mq4"
+    },
+    "CustomIndicatorMT5": {
         "body": "${1:handle} = iCustom(${2:_Symbol}, ${3:_Period}, \"::Indicators\\\\\\\\${4:indicatorName}\", ${5:params});",
         "description": "MT5: Create custom indicator",
-        "prefix": "CustomIndicator",
+        "prefix": "CustomIndicatorMT5",
+        "scope": "source.mq4"
+    },
+    "StochasticMT5": {
+        "body": 
+        [
+            "${1:handle} = iStochastic(${2:_Symbol}, ${3:_Period}, ${4:stoch_k}, ${5:stoch_d}, ${6:stoch_slowing}, ${7|MODE_SMA,MODE_EMA,MODE_SMMA,MODE_LWMA|}, ${8|STO_LOWHIGH,STO_CLOSECLOSE|});"
+        ],
+        "description": "MT5: Create stochastic indicator",
+        "prefix": "Stochastic",
+        "scope": "source.mq4"
+    },
+    "StochasticOutput": {
+        "body": 
+        [
+            "${1|MAIN_LINE,SIGNAL_LINE|}"
+        ],
+        "description": "MT5:Stochastic output lookup",
+        "prefix": "StochasticOutput",
         "scope": "source.mq4"
     },
     "CopyBuffer": {
@@ -114,8 +138,20 @@
             "}",
             "ObjectSetString(${3:chart_ID}, ${1:id}, OBJPROP_TEXT, ${10:text});"
         ],
-        "description": "MT5: Lookup PLOT_DRAW_TYPE value",
+        "description": "MT5: Create OBJ_TEXT",
         "prefix": "createTextObjectMT5",
+        "scope": "source.mq4"
+    },
+    "createStreamMT5": {
+        "body":
+        [
+            "SetIndexBuffer(${1:id}, ${2:stream}, INDICATOR_DATA);",
+            "PlotIndexSetInteger(${1:id}, PLOT_DRAW_TYPE, ${3|DRAW_NONE,DRAW_LINE,DRAW_SECTION,DRAW_HISTOGRAM,DRAW_HISTOGRAM2,DRAW_ARROW,DRAW_ZIGZAG,DRAW_FILLING,DRAW_BARS,DRAW_CANDLES,DRAW_COLOR_LINE,DRAW_COLOR_SECTION,DRAW_COLOR_HISTOGRAM,DRAW_COLOR_HISTOGRAM2,DRAW_COLOR_ARROW,DRAW_COLOR_ZIGZAG,DRAW_COLOR_BARS,DRAW_COLOR_CANDLES|});",
+            "PlotIndexSetInteger(${1:id}, PLOT_LINE_COLOR, ${4:clr});",
+            "PlotIndexSetString(${1:id}, PLOT_LABEL, ${5:name});"
+        ],
+        "description": "MT5: Create output stream",
+        "prefix": "createStreamMT5",
         "scope": "source.mq4"
     }
 }
