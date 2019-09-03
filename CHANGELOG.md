@@ -10,6 +10,7 @@
 * CopyBuffer
 * Stochastic
 * createStreamMT5
+* PlotIndexSetInteger
 
 ## 1.0
 

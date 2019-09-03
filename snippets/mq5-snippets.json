@@ -107,6 +107,15 @@
         "prefix": "OnDeinit",
         "scope": "source.mq4"
     },
+    "PlotIndexSetInteger": {
+        "body":
+        [
+            "PlotIndexSetInteger(${1:id}, ${2|PLOT_ARROW,PLOT_ARROW_SHIFT,PLOT_DRAW_BEGIN,PLOT_DRAW_TYPE,PLOT_SHOW_DATA,PLOT_SHIFT,PLOT_LINE_STYLE,PLOT_LINE_WIDTH,PLOT_COLOR_INDEXES,PLOT_LINE_COLOR|}, ${3:value});"
+        ],
+        "description": "MT5: PlotIndexSetInteger",
+        "prefix": "PlotIndexSetInteger",
+        "scope": "source.mq4"
+    },
     "enumDrawType": {
         "body":
         [
