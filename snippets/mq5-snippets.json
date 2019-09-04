@@ -26,6 +26,15 @@
         "prefix": "Stochastic",
         "scope": "source.mq4"
     },
+    "atrMT5": {
+        "body": 
+        [
+            "${1:handle} = iATR(${2:_Symbol}, ${3:_Period}, ${4:length});"
+        ],
+        "description": "MT5: Create ATR indicator",
+        "prefix": "atrMT5",
+        "scope": "source.mq4"
+    },
     "StochasticOutput": {
         "body": 
         [
@@ -114,6 +123,15 @@
         ],
         "description": "MT5: PlotIndexSetInteger",
         "prefix": "PlotIndexSetInteger",
+        "scope": "source.mq4"
+    },
+    "GetSpreadMT5": {
+        "body":
+        [
+            "double ${1:spread} = SymbolInfoInteger(${2:_Symbol}, SYMBOL_SPREAD);"
+        ],
+        "description": "MT5: GetSpread",
+        "prefix": "GetSpreadMT5",
         "scope": "source.mq4"
     },
     "enumDrawType": {

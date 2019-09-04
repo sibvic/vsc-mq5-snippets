@@ -11,6 +11,8 @@
 * Stochastic
 * createStreamMT5
 * PlotIndexSetInteger
+* GetSpreadMT5
+* ATR
 
 ## 1.0
 
