@@ -3,7 +3,7 @@
     "displayName": "ProfitRobots MQL5/MT5/MetaTrader 5 Snippets",
     "description": "ProfitRobots MQL5/MT5/MetaTrader 5 Snippets for Visual Studio Code",
     "homepage": "https://github.com/sibvic/vsc-mq5-snippets",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "publisher": "sibvic",
     "license": "MIT",
     "engines": {
