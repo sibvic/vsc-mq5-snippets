@@ -4,6 +4,7 @@
 
 * adxMT5
 * averagesMT5
+* pipSizeMT5
 
 ## 1.1
 

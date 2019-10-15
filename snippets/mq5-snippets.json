@@ -11,6 +11,18 @@
         "prefix": "IndicatorReleaseClipboard",
         "scope": "source.mq4"
     },
+    "pipSizeMT5": {
+        "body": 
+        [
+            "double point = SymbolInfoDouble(${1:_Symbol}, SYMBOL_POINT);",
+            "int digit = (int)SymbolInfoInteger(${1:_Symbol}, SYMBOL_DIGITS);",
+            "int mult = digit == 3 || digit == 5 ? 10 : 1;",
+            "double pipSize = point * mult;"
+        ],
+        "description": "MT5: Get pip size",
+        "prefix": "pipSizeMT5",
+        "scope": "source.mq4"
+    },
     "CustomIndicatorMT5": {
         "body": "${1:handle} = iCustom(${2:_Symbol}, ${3:_Period}, \"::Indicators\\\\\\\\${4:indicatorName}\", ${5:params});",
         "description": "MT5: Create custom indicator",
