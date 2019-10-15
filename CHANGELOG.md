@@ -2,6 +2,8 @@
 
 ## 1.2
 
+* adxMT5
+
 ## 1.1
 
 * OnCalculate

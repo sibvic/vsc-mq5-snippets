@@ -17,13 +17,22 @@
         "prefix": "CustomIndicatorMT5",
         "scope": "source.mq4"
     },
-    "StochasticMT5": {
+    "stochasticMT5": {
         "body": 
         [
             "${1:handle} = iStochastic(${2:_Symbol}, ${3:_Period}, ${4:stoch_k}, ${5:stoch_d}, ${6:stoch_slowing}, ${7|MODE_SMA,MODE_EMA,MODE_SMMA,MODE_LWMA|}, ${8|STO_LOWHIGH,STO_CLOSECLOSE|});"
         ],
         "description": "MT5: Create stochastic indicator",
-        "prefix": "Stochastic",
+        "prefix": "stochasticMT5",
+        "scope": "source.mq4"
+    },
+    "adxMT5": {
+        "body": 
+        [
+            "${1:handle} = iADX(${2:_Symbol}, ${3:_Period}, ${4:adx_period});"
+        ],
+        "description": "MT5: iADX",
+        "prefix": "adxMT5",
         "scope": "source.mq4"
     },
     "atrMT5": {
