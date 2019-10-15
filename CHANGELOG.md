@@ -3,6 +3,7 @@
 ## 1.2
 
 * adxMT5
+* averagesMT5
 
 ## 1.1
 
