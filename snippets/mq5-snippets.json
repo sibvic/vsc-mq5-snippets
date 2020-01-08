@@ -83,7 +83,7 @@
         "prefix": "CopyBuffer",
         "scope": "source.mq4"
     },
-    "OnCalculate": {
+    "OnCalculateMT5": {
         "body":
         [
             "int OnCalculate(const int rates_total,       // size of input time series",
@@ -105,10 +105,10 @@
             "}"
         ],
         "description": "MT5: OnCalculate function",
-        "prefix": "OnCalculate",
+        "prefix": "OnCalculateMT5",
         "scope": "source.mq4"
     },
-    "OnInit": {
+    "OnInitMT5": {
         "body":
         [
             "string IndicatorName;",
@@ -128,10 +128,10 @@
             "}"
         ],
         "description": "MT5: OnInit function",
-        "prefix": "OnInit",
+        "prefix": "OnInitMT5",
         "scope": "source.mq4"
     },
-    "OnDeinit": {
+    "OnDeinitMT5": {
         "body":
         [
             "void OnDeinit(const int reason)",
@@ -140,7 +140,7 @@
             "}"
         ],
         "description": "MT5: OnDeinit function",
-        "prefix": "OnDeinit",
+        "prefix": "OnDeinitMT5",
         "scope": "source.mq4"
     },
     "PlotIndexSetInteger": {
