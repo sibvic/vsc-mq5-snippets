@@ -143,6 +143,21 @@
         "prefix": "OnDeinitMT5",
         "scope": "source.mq4"
     },
+    "ObjectSetTextMT5": {
+        "body":
+        [
+            "void ObjectSetText(string id, string text, int fontSize, string font, color clr)",
+            "{",
+            "   ObjectSetString(0, id, OBJPROP_TEXT, text);",
+            "   ObjectSetString(0, id, OBJPROP_FONT, font);",
+            "   ObjectSetInteger(0, id, OBJPROP_FONTSIZE, fontSize);",
+            "   ObjectSetInteger(0, id, OBJPROP_COLOR, clr);",
+            "}"
+        ],
+        "description": "MT5: ObjectSetText function similar to MT4",
+        "prefix": "ObjectSetTextMT5",
+        "scope": "source.mq4"
+    },
     "PlotIndexSetInteger": {
         "body":
         [

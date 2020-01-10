@@ -5,6 +5,7 @@
 * adxMT5
 * averagesMT5
 * pipSizeMT5
+* ObjectSetTextMT5
 
 ## 1.1
 
