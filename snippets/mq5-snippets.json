@@ -222,5 +222,14 @@
         "description": "MT5: Create output stream",
         "prefix": "createStreamMT5",
         "scope": "source.mq4"
+    },
+    "createInternalStreamMT5": {
+        "body":
+        [
+            "SetIndexBuffer(${1:id}, ${2:stream}, INDICATOR_CALCULATIONS);"
+        ],
+        "description": "MT5: Create internal stream",
+        "prefix": "createInternalStreamMT5",
+        "scope": "source.mq4"
     }
 }

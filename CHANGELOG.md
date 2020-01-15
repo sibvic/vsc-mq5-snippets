@@ -6,6 +6,7 @@
 * averagesMT5
 * pipSizeMT5
 * ObjectSetTextMT5
+* createInternalStreamMT5
 
 ## 1.1
 
