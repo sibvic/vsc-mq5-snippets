@@ -7,6 +7,7 @@
 * pipSizeMT5
 * ObjectSetTextMT5
 * createInternalStreamMT5
+* createRectangleObjectMT5
 
 ## 1.1
 
