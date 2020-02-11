@@ -239,6 +239,36 @@
         "prefix": "createRectangleObjectMT5",
         "scope": "source.mq4"
     },
+    "createTrendObjectMT5": {
+        "body":
+        [
+            "string ${1:id} = IndicatorObjPrefix + \"${2:textId}\";",
+            "if (ObjectFind(${3:chart_ID}, ${1:id}) == -1)",
+            "{",
+            "   if (ObjectCreate(${3:chart_ID}, ${1:id}, OBJ_TREND, ${4:sub_window}, ${5:time1}, ${6:price1}, ${7:time2}, ${8:price2}))",
+            "   {",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_COLOR, ${9:clr});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_STYLE, ${10:style});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_WIDTH, ${11:width});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_FILL, ${12:fill});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_BACK, ${13:back});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_SELECTABLE, ${14:selection});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_SELECTED, ${15:selection});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_RAY_LEFT, ${16:ray_left});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_RAY_RIGHT, ${17:ray_right});", 
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_HIDDEN, ${18:hidden});",
+            "      ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_ZORDER, ${19:z_order});",
+            "   }",
+            "}",
+            "ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_TIME, 0, ${5:time1});",
+            "ObjectSetDouble(${3:chart_ID}, ${1:id}, OBJPROP_PRICE, 0, ${6:price1});",
+            "ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_TIME, 1, ${7:time2});",
+            "ObjectSetDouble(${3:chart_ID}, ${1:id}, OBJPROP_PRICE, 1, ${8:price2});"
+        ],
+        "description": "MT5: Create OBJ_TREND",
+        "prefix": "createTrendObjectMT5",
+        "scope": "source.mq4"
+    },
     "createStreamMT5": {
         "body":
         [

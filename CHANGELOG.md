@@ -8,6 +8,7 @@
 * ObjectSetTextMT5
 * createInternalStreamMT5
 * createRectangleObjectMT5
+* createTrendObjectMT5
 
 ## 1.1
 
