@@ -47,9 +47,18 @@
         "prefix": "adxMT5",
         "scope": "source.mq4"
     },
+    "rsiMT5": {
+        "body": 
+        [
+            "${1:handle} = iRSI(${2:_Symbol}, ${3:_Period}, ${4:rsi_period}, ${5|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|});"
+        ],
+        "description": "MT5: iRSI",
+        "prefix": "rsiMT5",
+        "scope": "source.mq4"
+    },
     "averagesMT5": {
         "body": "${1:hande} = iMA(${2:_Symbol}, ${3:_Period}, ${4:ma_period}, ${5:ma_shift}, ${6|MODE_SMA,MODE_EMA,MODE_SMMA,MODE_LWMA|}, ${7|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|});",
-        "description": "Value of averages indicator",
+        "description": "MT5: Value of averages indicator",
         "prefix": "averagesMT5",
         "scope": "source.mq4"
     },

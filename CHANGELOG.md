@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3
+
+* rsiMT5
+
 ## 1.2
 
 * adxMT5
