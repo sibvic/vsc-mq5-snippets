@@ -5,6 +5,7 @@
 * rsiMT5
 * macdMT5
 * momentumMT5
+* cciMT5
 
 ## 1.2
 
