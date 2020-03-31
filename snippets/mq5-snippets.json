@@ -65,6 +65,15 @@
         "prefix": "macdMT5",
         "scope": "source.mq4"
     },
+    "momentumMT5": {
+        "body": 
+        [
+            "${1:handle} = iMomentum(${2:_Symbol}, ${3:_Period}, ${4:mom_period}, ${5|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|});"
+        ],
+        "description": "MT5: iMomentum",
+        "prefix": "momentumMT5",
+        "scope": "source.mq4"
+    },
     "averagesMT5": {
         "body": "${1:hande} = iMA(${2:_Symbol}, ${3:_Period}, ${4:ma_period}, ${5:ma_shift}, ${6|MODE_SMA,MODE_EMA,MODE_SMMA,MODE_LWMA|}, ${7|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|});",
         "description": "MT5: Value of averages indicator",

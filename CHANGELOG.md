@@ -4,6 +4,7 @@
 
 * rsiMT5
 * macdMT5
+* momentumMT5
 
 ## 1.2
 
