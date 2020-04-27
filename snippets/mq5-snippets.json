@@ -5,6 +5,12 @@
         "prefix": "IndicatorRelease",
         "scope": "source.mq4"
     },
+    "OrderGetStringMT5": {
+        "body": "OrderGetString(${1|ORDER_SYMBOL,ORDER_COMMENT,ORDER_EXTERNAL_ID|})",
+        "description": "MT5: OrderGetString()",
+        "prefix": "OrderGetStringMT5",
+        "scope": "source.mq4"
+    },
     "IndicatorReleaseClipboard": {
         "body": "IndicatorRelease(${CLIPBOARD:indicator_handle});",
         "description": "MT5: Releases indicator handler",
