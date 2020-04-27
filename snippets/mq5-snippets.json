@@ -11,6 +11,12 @@
         "prefix": "OrderGetStringMT5",
         "scope": "source.mq4"
     },
+    "OrderGetDoubleMT5": {
+        "body": "OrderGetDouble(${1|ORDER_VOLUME_INITIAL,ORDER_VOLUME_CURRENT,ORDER_PRICE_OPEN,ORDER_SL,ORDER_TP,ORDER_PRICE_CURRENT,ORDER_PRICE_STOPLIMIT|})",
+        "description": "MT5: OrderGetDouble()",
+        "prefix": "OrderGetDoubleMT5",
+        "scope": "source.mq4"
+    },
     "IndicatorReleaseClipboard": {
         "body": "IndicatorRelease(${CLIPBOARD:indicator_handle});",
         "description": "MT5: Releases indicator handler",

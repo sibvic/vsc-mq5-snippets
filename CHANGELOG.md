@@ -7,6 +7,7 @@
 * momentumMT5
 * cciMT5
 * OrderGetStringMT5
+* OrderGetDoubleMT5
 
 ## 1.2
 
