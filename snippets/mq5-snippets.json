@@ -17,6 +17,30 @@
         "prefix": "OrderGetDoubleMT5",
         "scope": "source.mq4"
     },
+    "OrderGetIntegerMT5": {
+        "body": "OrderGetInteger(${1|ORDER_TICKET,ORDER_TIME_SETUP,ORDER_TYPE,ORDER_STATE,ORDER_TIME_EXPIRATION,ORDER_TIME_DONE,ORDER_TIME_SETUP_MSC,ORDER_TIME_DONE_MSC,ORDER_TYPE_FILLING,ORDER_TYPE_TIME,ORDER_MAGIC,ORDER_REASON,ORDER_POSITION_ID,ORDER_POSITION_BY_ID|})",
+        "description": "MT5: OrderGetInteger()",
+        "prefix": "OrderGetIntegerMT5",
+        "scope": "source.mq4"
+    },
+    "PositionGetStringMT5": {
+        "body": "PositionGetString(${1|POSITION_SYMBOL,POSITION_COMMENT,POSITION_EXTERNAL_ID|})",
+        "description": "MT5: PositionGetString()",
+        "prefix": "OrderGetStringMT5",
+        "scope": "source.mq4"
+    },
+    "PositionGetDoubleMT5": {
+        "body": "PositionGetDouble(${1|POSITION_VOLUME,POSITION_PRICE_OPEN,POSITION_SL,POSITION_TP,POSITION_PRICE_CURRENT,POSITION_SWAP,POSITION_PROFIT|})",
+        "description": "MT5: PositionGetDouble()",
+        "prefix": "PositionGetDoubleMT5",
+        "scope": "source.mq4"
+    },
+    "PositionGetIntegerMT5": {
+        "body": "PositionGetInteger(${1|ORDER_TICKET,ORDER_TIME_SETUP,ORDER_TYPE,ORDER_STATE,ORDER_TIME_EXPIRATION,ORDER_TIME_DONE,ORDER_TIME_SETUP_MSC,ORDER_TIME_DONE_MSC,ORDER_TYPE_FILLING,ORDER_TYPE_TIME,ORDER_MAGIC,ORDER_REASON,ORDER_POSITION_ID,ORDER_POSITION_BY_ID,POSITION_TICKET,POSITION_TIME,POSITION_TIME_MSC,POSITION_TIME_UPDATE,POSITION_TIME_UPDATE_MSC,POSITION_TYPE,POSITION_MAGIC,POSITION_IDENTIFIER,POSITION_REASON|})",
+        "description": "MT5: PositionGetInteger()",
+        "prefix": "PositionGetIntegerMT5",
+        "scope": "source.mq4"
+    },
     "IndicatorReleaseClipboard": {
         "body": "IndicatorRelease(${CLIPBOARD:indicator_handle});",
         "description": "MT5: Releases indicator handler",

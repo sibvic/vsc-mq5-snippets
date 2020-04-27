@@ -8,6 +8,10 @@
 * cciMT5
 * OrderGetStringMT5
 * OrderGetDoubleMT5
+* OrderGetIntegerMT5
+* PositionGetStringMT5
+* PositionGetDoubleMT5
+* PositionGetIntegerMT5
 
 ## 1.2
 
