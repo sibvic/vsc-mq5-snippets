@@ -5,6 +5,30 @@
         "prefix": "IndicatorRelease",
         "scope": "source.mq4"
     },
+    "maOnArrayMT5": {
+        "body": 
+        [
+            "int ${6:weightsum};",
+            "switch (${1:average_type})",
+            "{",
+            "   case MODE_SMA:",
+            "      SimpleMAOnBuffer(rates_total, prev_calculated, ${2:begin}, ${3:pos}, ${4:in}, ${5:out});",
+            "      break;",
+            "   case MODE_EMA:",
+            "      ExponentialMAOnBuffer(rates_total, prev_calculated, ${2:begin}, ${3:pos}, ${4:in}, ${5:out});",
+            "      break;",
+            "   case MODE_SMMA:",
+            "      SmoothedMAOnBuffer(rates_total, prev_calculated, ${2:begin}, ${3:pos}, ${4:in}, ${5:out});",
+            "      break;",
+            "   case MODE_LWMA:",
+            "      LinearWeightedMAOnBuffer(rates_total, prev_calculated, ${2:begin}, ${3:pos}, ${4:in}, ${5:out}, ${6:weightsum});",
+            "      break;",
+            "}"
+        ],
+        "description": "MT5: switch statement for a price",
+        "prefix": "switchPriceMT5",
+        "scope": "source.mq4"
+    },
     "switchPriceMT5": {
         "body": 
         [

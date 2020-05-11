@@ -12,8 +12,10 @@
 * PositionGetStringMT5
 * PositionGetDoubleMT5
 * PositionGetIntegerMT5
-* propStream
-* inputPrice
+* propStreamMT5
+* inputPriceMT5
+* switchPriceMT5
+* maOnArrayMT5
 
 ## 1.2
 
