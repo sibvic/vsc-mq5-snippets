@@ -5,7 +5,32 @@
         "prefix": "IndicatorRelease",
         "scope": "source.mq4"
     },
-    "propStream": {
+    "switchPriceMT5": {
+        "body": 
+        [
+            "switch (${1:priceType})",
+            "{",
+            "   case PRICE_CLOSE:",
+            "      break;",
+            "   case PRICE_OPEN:",
+            "      break;",
+            "   case PRICE_HIGH:",
+            "      break;",
+            "   case PRICE_LOW:",
+            "      break;",
+            "   case PRICE_MEDIAN:",
+            "      break;",
+            "   case PRICE_TYPICAL:",
+            "      break;",
+            "   case PRICE_WEIGHTED:",
+            "      break;",
+            "}"
+        ],
+        "description": "MT5: switch statement for a price",
+        "prefix": "switchPriceMT5",
+        "scope": "source.mq4"
+    },
+    "propStreamMT5": {
         "body": 
         [
             "#property indicator_type${1:1}  ${2|DRAW_NONE,DRAW_LINE,DRAW_SECTION,DRAW_HISTOGRAM,DRAW_HISTOGRAM2,DRAW_ARROW,DRAW_ZIGZAG,DRAW_FILLING,DRAW_BARS,DRAW_CANDLES,DRAW_COLOR_LINE,DRAW_COLOR_SECTION,DRAW_COLOR_HISTOGRAM,DRAW_COLOR_HISTOGRAM2,DRAW_COLOR_ARROW,DRAW_COLOR_ZIGZAG,DRAW_COLOR_BARS,DRAW_COLOR_CANDLES|}",
@@ -18,7 +43,7 @@
         "prefix": "propStream",
         "scope": "source.mq4"
     },
-    "inputPrice": {
+    "inputPriceMT5": {
         "body": 
         [
             "input ENUM_APPLIED_PRICE ${1:price} = ${2|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|}; // ${3:Price type}"
