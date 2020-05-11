@@ -18,6 +18,15 @@
         "prefix": "propStream",
         "scope": "source.mq4"
     },
+    "inputPrice": {
+        "body": 
+        [
+            "input ENUM_APPLIED_PRICE ${1:price} = ${2|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|}; // ${3:Price type}"
+        ],
+        "description": "MT5: Input of a price",
+        "prefix": "inputPrice",
+        "scope": "source.mq4"
+    },
     "OrderGetStringMT5": {
         "body": "OrderGetString(${1|ORDER_SYMBOL,ORDER_COMMENT,ORDER_EXTERNAL_ID|})",
         "description": "MT5: OrderGetString()",

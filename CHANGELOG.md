@@ -13,6 +13,7 @@
 * PositionGetDoubleMT5
 * PositionGetIntegerMT5
 * propStream
+* inputPrice
 
 ## 1.2
 
