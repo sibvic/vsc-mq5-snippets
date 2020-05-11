@@ -12,6 +12,7 @@
 * PositionGetStringMT5
 * PositionGetDoubleMT5
 * PositionGetIntegerMT5
+* propStream
 
 ## 1.2
 
