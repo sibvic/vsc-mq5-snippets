@@ -17,6 +17,7 @@
 * switchPriceMT5
 * maOnArrayMT5
 * sarMT5
+* wprMT5
 
 ## 1.2
 

@@ -214,6 +214,15 @@
         "prefix": "sarMT5",
         "scope": "source.mq4"
     },
+    "wprMT5": {
+        "body": 
+        [
+            "${1:handle} = iWPR(${2:_Symbol}, ${3:_Period}, ${4:calc_period});"
+        ],
+        "description": "MT5: Create WPR indicator",
+        "prefix": "wprMT5",
+        "scope": "source.mq4"
+    },
     "StochasticOutput": {
         "body": 
         [
