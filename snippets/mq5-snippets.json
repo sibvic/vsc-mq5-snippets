@@ -205,6 +205,15 @@
         "prefix": "atrMT5",
         "scope": "source.mq4"
     },
+    "sarMT5": {
+        "body": 
+        [
+            "${1:handle} = iSAR(${2:_Symbol}, ${3:_Period}, ${4:step}, ${5:maximum});"
+        ],
+        "description": "MT5: Create PSAR indicator",
+        "prefix": "sarMT5",
+        "scope": "source.mq4"
+    },
     "StochasticOutput": {
         "body": 
         [
@@ -218,7 +227,7 @@
         "body": 
         [
             "double ${5:buffer}[${4:count}];",
-            "if (CopyBuffer(${1:indicator_handle}, ${2:buffer_num}, ${3:start_pos_or_time}, ${4:count}, ${5:buffer}) == ${4:count})",
+            "if (CopyBuffer(${1:indicator_handle}, ${2:buffer_num}, ${3:rates_total - 1 - pos}, ${4:count}, ${5:buffer}) ${6|==,!=|} ${4:count})",
             "{",
             "}"
         ],

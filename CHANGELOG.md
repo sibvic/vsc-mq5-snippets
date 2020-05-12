@@ -16,6 +16,7 @@
 * inputPriceMT5
 * switchPriceMT5
 * maOnArrayMT5
+* sarMT5
 
 ## 1.2
 
