@@ -1,4 +1,24 @@
 {
+    "highestArrayMT5": {
+        "body": 
+        [
+            "int highestIndex = ArrayMaximum(${1:array}, ${2:start}, ${3:count});",
+            "double ${4:highest} = ${1:array}[highestIndex];"
+        ],
+        "description": "MT5: Finds the highest value in the array.",
+        "prefix": "highestArrayMT5",
+        "scope": "source.mq4"
+    },
+    "lowestArrayMT5": {
+        "body": 
+        [
+            "int lowestIndex = ArrayMinimum(${1:array}, ${2:start}, ${3:count});",
+            "double ${4:lowest} = ${1:array}[lowestIndex];"
+        ],
+        "description": "MT5: Finds the lowest value in the array.",
+        "prefix": "lowestArrayMT5",
+        "scope": "source.mq4"
+    },
     "IndicatorRelease": {
         "body": "IndicatorRelease(${1:indicator_handle});",
         "description": "MT5: Releases indicator handler",

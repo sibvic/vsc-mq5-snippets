@@ -18,6 +18,8 @@
 * maOnArrayMT5
 * sarMT5
 * wprMT5
+* highestArrayMT5
+* lowestArrayMT5
 
 ## 1.2
 
