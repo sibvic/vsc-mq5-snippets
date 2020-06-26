@@ -22,6 +22,7 @@
 * lowestArrayMT5
 * createArrowStreamMT5
 * adMT5
+* createColorStreamMT5
 
 ## 1.2
 

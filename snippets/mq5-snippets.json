@@ -486,6 +486,15 @@
         "prefix": "createStreamMT5",
         "scope": "source.mq4"
     },
+    "createColorStreamMT5": {
+        "body":
+        [
+            "SetIndexBuffer(${1:id}, ${1:stream}, INDICATOR_COLOR_INDEX);"
+        ],
+        "description": "MT5: Create color stream",
+        "prefix": "createColorStreamMT5",
+        "scope": "source.mq4"
+    },
     "createInternalStreamMT5": {
         "body":
         [
