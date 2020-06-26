@@ -174,6 +174,15 @@
         "prefix": "adxMT5",
         "scope": "source.mq4"
     },
+    "adMT5": {
+        "body": 
+        [
+            "${1:handle} = iAD(${2:_Symbol}, ${3:_Period}, ${4|VOLUME_TICK,VOLUME_REAL|});"
+        ],
+        "description": "MT5: iAD",
+        "prefix": "adMT5",
+        "scope": "source.mq4"
+    },
     "rsiMT5": {
         "body": 
         [
@@ -292,21 +301,37 @@
     "OnInitMT5": {
         "body":
         [
-            "string IndicatorName;",
             "string IndicatorObjPrefix;",
-            "string GenerateIndicatorName(const string target)",
+            "bool NamesCollision(const string name)",
             "{",
-            "   string name = target;",
-            "   return name;",
+            "   for (int k = ObjectsTotal(0); k >= 0; k--)",
+            "   {",
+            "      if (StringFind(ObjectName(0, k), name) == 0)",
+            "      {",
+            "         return true;",
+            "      }",
+            "   }",
+            "   return false;",
             "}",
+            "string GenerateIndicatorPrefix(const string target)",
+            "{",
+            "   for (int i = 0; i < 1000; ++i)",
+            "   {",
+            "      string prefix = target + \"_\" + IntegerToString(i);",
+            "      if (!NamesCollision(prefix))",
+            "      {",
+            "         return prefix;",
+            "      }",
+            "   }",
+            "   return target;",
+            "}",
+            
+            "int zz;",
             "int OnInit(void)",
             "{",
-            "   IndicatorName = GenerateIndicatorName(\"${1:Name}\");",
-            "   IndicatorObjPrefix = \"__\" + IndicatorName + \"__\";",
-            "   IndicatorSetString(INDICATOR_SHORTNAME, IndicatorName);",
-            "   IndicatorSetInteger(INDICATOR_DIGITS, Digits());",
-            "   return INIT_SUCCEEDED;//INIT_FAILED",
-            "}"
+            "   IndicatorObjPrefix = GenerateIndicatorPrefix(\"${1:id}\");",
+            "   IndicatorSetString(INDICATOR_SHORTNAME, \"${2:name}\");",
+            "   IndicatorSetInteger(INDICATOR_DIGITS, Digits());"
         ],
         "description": "MT5: OnInit function",
         "prefix": "OnInitMT5",
@@ -468,6 +493,17 @@
         ],
         "description": "MT5: Create internal stream",
         "prefix": "createInternalStreamMT5",
+        "scope": "source.mq4"
+    },
+    "createArrowStreamMT5": {
+        "body":
+        [
+            "SetIndexBuffer(${1:id}, ${2:buffer}, INDICATOR_DATA);",
+            "PlotIndexSetInteger(${1:id}, PLOT_ARROW, ${3:code});",
+            "PlotIndexSetInteger(${1:id}, PLOT_ARROW_SHIFT, 5);"
+        ],
+        "description": "MT5: Create arrow stream",
+        "prefix": "createArrowStreamMT5",
         "scope": "source.mq4"
     }
 }

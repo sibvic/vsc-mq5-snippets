@@ -20,6 +20,8 @@
 * wprMT5
 * highestArrayMT5
 * lowestArrayMT5
+* createArrowStreamMT5
+* adMT5
 
 ## 1.2
 
