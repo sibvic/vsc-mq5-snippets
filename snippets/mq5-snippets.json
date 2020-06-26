@@ -489,7 +489,7 @@
     "createColorStreamMT5": {
         "body":
         [
-            "SetIndexBuffer(${1:id}, ${1:stream}, INDICATOR_COLOR_INDEX);"
+            "SetIndexBuffer(${1:id}, ${2:stream}, INDICATOR_COLOR_INDEX);"
         ],
         "description": "MT5: Create color stream",
         "prefix": "createColorStreamMT5",
