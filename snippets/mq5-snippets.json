@@ -445,6 +445,36 @@
         "prefix": "createRectangleObjectMT5",
         "scope": "source.mq4"
     },
+    "createRectangleLabelMT5": {
+        "body":
+        [
+            "string ${1:id} = IndicatorObjPrefix + \"${2:textId}\";",
+            "if (ObjectFind(${3:chart_ID}, ${1:id}) == -1)",
+            "{",
+            "   if (ObjectCreate(${3:chart_ID}, ${1:id}, OBJ_RECTANGLE_LABEL, ${4:sub_window}, 0, 0))",
+            "   {",
+            "         ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_BGCOLOR, ${9:back_clr});",
+            "         ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_BORDER_TYPE, ${10:border});",
+            "         ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_CORNER, ${11:corner});",
+            "         ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_COLOR, ${12:clr});",
+            "         ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_STYLE, ${13:style});",
+            "         ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_WIDTH, ${14:line_width});",
+            "         ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_BACK, ${15:back});",
+            "         ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_SELECTABLE, ${16:selection});",
+            "         ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_SELECTED, ${17:selection});",
+            "         ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_HIDDEN, ${18:hidden});",
+            "         ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_ZORDER, ${19:z_order});",
+            "   }",
+            "}",
+            "ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_XDISTANCE, ${5:x});",
+            "ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_YDISTANCE, ${6:y});",
+            "ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_XSIZE, ${7:width});",
+            "ObjectSetInteger(${3:chart_ID}, ${1:id}, OBJPROP_YSIZE, ${8:height});"
+        ],
+        "description": "MT5: Create OBJ_RECTANGLE_LABEL",
+        "prefix": "createRectangleLabelMT5",
+        "scope": "source.mq4"
+    },
     "createTrendObjectMT5": {
         "body":
         [

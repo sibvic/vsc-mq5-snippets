@@ -23,6 +23,7 @@
 * createArrowStreamMT5
 * adMT5
 * createColorStreamMT5
+* createRectangleLabelMT5
 
 ## 1.2
 
