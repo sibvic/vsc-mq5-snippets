@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.5
+
 ## 1.4
 
 * rsiMT5
