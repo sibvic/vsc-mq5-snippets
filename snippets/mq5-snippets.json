@@ -192,6 +192,15 @@
         "prefix": "rsiMT5",
         "scope": "source.mq4"
     },
+    "bandsMT5": {
+        "body": 
+        [
+            "${1:handle} = iBands(${2:_Symbol}, ${3:_Period}, ${4:bb_period}, ${5:bb_shift}, ${6:bb_deviation}, ${7|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|});"
+        ],
+        "description": "MT5: iBands",
+        "prefix": "bandsMT5",
+        "scope": "source.mq4"
+    },
     "macdMT5": {
         "body": 
         [
