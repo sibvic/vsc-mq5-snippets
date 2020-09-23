@@ -2,6 +2,7 @@
 
 ## 1.5
 
+* AccountInfoDoubleMT5
 * bandsMT5
 * OnTickMT5
 

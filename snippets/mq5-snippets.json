@@ -114,6 +114,12 @@
         "prefix": "OrderGetStringMT5",
         "scope": "source.mq4"
     },
+    "AccountInfoDoubleMT5": {
+        "body": "AccountInfoDouble(${1|ACCOUNT_BALANCE,ACCOUNT_CREDIT,ACCOUNT_PROFIT,ACCOUNT_EQUITY,ACCOUNT_MARGIN,ACCOUNT_MARGIN_FREE,ACCOUNT_MARGIN_LEVEL.ACCOUNT_MARGIN_SO_CALL,ACCOUNT_MARGIN_SO_SO,ACCOUNT_MARGIN_INITIAL,ACCOUNT_MARGIN_MAINTENANCE,ACCOUNT_ASSETS,ACCOUNT_LIABILITIES,ACCOUNT_COMMISSION_BLOCKED|})",
+        "description": "MT5: AccountInfoDouble()",
+        "prefix": "AccountInfoDoubleMT5",
+        "scope": "source.mq4"
+    },
     "OrderGetDoubleMT5": {
         "body": "OrderGetDouble(${1|ORDER_VOLUME_INITIAL,ORDER_VOLUME_CURRENT,ORDER_PRICE_OPEN,ORDER_SL,ORDER_TP,ORDER_PRICE_CURRENT,ORDER_PRICE_STOPLIMIT|})",
         "description": "MT5: OrderGetDouble()",
