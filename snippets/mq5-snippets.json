@@ -399,6 +399,17 @@
         "prefix": "OnDeinitMT5",
         "scope": "source.mq4"
     },
+    "OnTickMT5": {
+        "body":
+        [
+            "void OnTick()",
+            "{",
+            "}"
+        ],
+        "description": "MT5: OnTick function",
+        "prefix": "OnTickMT5",
+        "scope": "source.mq4"
+    },
     "ObjectSetTextMT5": {
         "body":
         [

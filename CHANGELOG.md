@@ -3,6 +3,7 @@
 ## 1.5
 
 * bandsMT5
+* OnTickMT5
 
 ## 1.4
 
