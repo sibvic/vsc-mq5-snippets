@@ -605,6 +605,7 @@
         "body":
         [
             "SetIndexBuffer(${1:id}, ${2:buffer}, INDICATOR_DATA);",
+            "PlotIndexSetInteger(${1:id}, PLOT_DRAW_TYPE, DRAW_ARROW);",
             "PlotIndexSetInteger(${1:id}, PLOT_ARROW, ${3:code});",
             "PlotIndexSetInteger(${1:id}, PLOT_ARROW_SHIFT, 5);"
         ],
