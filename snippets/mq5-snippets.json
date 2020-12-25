@@ -141,7 +141,7 @@
     "PositionGetStringMT5": {
         "body": "PositionGetString(${1|POSITION_SYMBOL,POSITION_COMMENT,POSITION_EXTERNAL_ID|})",
         "description": "MT5: PositionGetString()",
-        "prefix": "OrderGetStringMT5",
+        "prefix": "PositionGetStringMT5",
         "scope": "source.mq4"
     },
     "PositionGetDoubleMT5": {
