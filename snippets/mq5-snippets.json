@@ -192,6 +192,15 @@
         "prefix": "adxMT5",
         "scope": "source.mq4"
     },
+    "demarkerMT5": {
+        "body": 
+        [
+            "${1:handle} = iDeMarker(${2:_Symbol}, ${3:_Period}, ${4:demarker_period});"
+        ],
+        "description": "MT5: iDeMarker",
+        "prefix": "demarkerMT5",
+        "scope": "source.mq4"
+    },
     "adMT5": {
         "body": 
         [

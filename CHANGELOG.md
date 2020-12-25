@@ -5,6 +5,7 @@
 * AccountInfoDoubleMT5
 * bandsMT5
 * OnTickMT5
+* demarkerMT5
 
 ## 1.4
 
