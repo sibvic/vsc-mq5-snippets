@@ -132,6 +132,24 @@
         "prefix": "OrderGetDoubleMT5",
         "scope": "source.mq4"
     },
+    "HistoryDealGetStringMT5": {
+        "body": "HistoryDealGetString(${1|DEAL_SYMBOL,DEAL_COMMENT,DEAL_EXTERNAL_ID|})",
+        "description": "MT5: HistoryDealGetString()",
+        "prefix": "HistoryDealGetStringMT5",
+        "scope": "source.mq4"
+    },
+    "HistoryDealGetIntegerMT5": {
+        "body": "HistoryDealGetInteger(${1|DEAL_TICKET,DEAL_ORDER,DEAL_TIME,DEAL_TIME_MSC,DEAL_TYPE,DEAL_ENTRY,DEAL_MAGIC,DEAL_REASON,DEAL_POSITION_ID|})",
+        "description": "MT5: HistoryDealGetInteger()",
+        "prefix": "HistoryDealGetIntegerMT5",
+        "scope": "source.mq4"
+    },
+    "HistoryDealGetDoubleMT5": {
+        "body": "HistoryDealGetDouble(${1|DEAL_VOLUME,DEAL_PRICE,DEAL_COMMISSION,DEAL_SWAP,DEAL_PROFIT,DEAL_FEE|})",
+        "description": "MT5: HistoryDealGetDouble()",
+        "prefix": "HistoryDealGetDoubleMT5",
+        "scope": "source.mq4"
+    },
     "OrderGetIntegerMT5": {
         "body": "OrderGetInteger(${1|ORDER_TICKET,ORDER_TIME_SETUP,ORDER_TYPE,ORDER_STATE,ORDER_TIME_EXPIRATION,ORDER_TIME_DONE,ORDER_TIME_SETUP_MSC,ORDER_TIME_DONE_MSC,ORDER_TYPE_FILLING,ORDER_TYPE_TIME,ORDER_MAGIC,ORDER_REASON,ORDER_POSITION_ID,ORDER_POSITION_BY_ID|})",
         "description": "MT5: OrderGetInteger()",

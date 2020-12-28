@@ -7,6 +7,9 @@
 * OnTickMT5
 * demarkerMT5
 * SymbolInfoDoubleMT5
+* HistoryDealGetStringMT5
+* HistoryDealGetIntegerMT5
+* HistoryDealGetDoubleMT5
 
 ## 1.4
 
