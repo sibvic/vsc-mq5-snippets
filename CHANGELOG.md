@@ -11,6 +11,12 @@
 * HistoryDealGetStringMT5
 * HistoryDealGetIntegerMT5
 * HistoryDealGetDoubleMT5
+* AccountInfoStringMT5
+* AccountInfoIntegerMT5
+* AccountCompanyMT5
+* AccountServerMT5
+* AccountNameMT5
+* AccountNumberMT5
 
 ## 1.4
 

@@ -120,6 +120,42 @@
         "prefix": "AccountInfoDoubleMT5",
         "scope": "source.mq4"
     },
+    "AccountInfoStringMT5": {
+        "body": "AccountInfoString(${1|ACCOUNT_NAME,ACCOUNT_SERVER,ACCOUNT_CURRENCY,ACCOUNT_COMPANY|})",
+        "description": "MT5: AccountInfoString()",
+        "prefix": "AccountInfoStringMT5",
+        "scope": "source.mq4"
+    },
+    "AccountCompanyMT5": {
+        "body": "AccountInfoString(ACCOUNT_COMPANY)",
+        "description": "MT5: AccountCompany()",
+        "prefix": "AccountCompanyMT5",
+        "scope": "source.mq4"
+    },
+    "AccountServerMT5": {
+        "body": "AccountInfoString(ACCOUNT_SERVER)",
+        "description": "MT5: AccountServer()",
+        "prefix": "AccountServerMT5",
+        "scope": "source.mq4"
+    },
+    "AccountNameMT5": {
+        "body": "AccountInfoString(ACCOUNT_NAME)",
+        "description": "MT5: AccountName()",
+        "prefix": "AccountNameMT5",
+        "scope": "source.mq4"
+    },
+    "AccountNumberMT5": {
+        "body": "AccountInfoInteger(ACCOUNT_LOGIN)",
+        "description": "MT5: AccountNumber()",
+        "prefix": "AccountNumberMT5",
+        "scope": "source.mq4"
+    },
+    "AccountInfoIntegerMT5": {
+        "body": "AccountInfoInteger(${1|ACCOUNT_LOGIN,ACCOUNT_TRADE_MODE,ACCOUNT_LEVERAGE,ACCOUNT_LIMIT_ORDERS,ACCOUNT_MARGIN_SO_MODE,ACCOUNT_TRADE_ALLOWED,ACCOUNT_TRADE_EXPERT,ACCOUNT_MARGIN_MODE,ACCOUNT_CURRENCY_DIGITS,ACCOUNT_FIFO_CLOSE|})",
+        "description": "MT5: AccountInfoInteger()",
+        "prefix": "AccountInfoIntegerMT5",
+        "scope": "source.mq4"
+    },
     "SymbolInfoDoubleMT5": {
         "body": "SymbolInfoDouble(${1:Symbol()}, ${2|SYMBOL_BID,SYMBOL_BIDHIGH,SYMBOL_BIDLOW,SYMBOL_ASK,SYMBOL_ASKHIGH,SYMBOL_ASKLOW,SYMBOL_LAST,SYMBOL_LASTHIGH,SYMBOL_LASTLOW,SYMBOL_VOLUME_REAL,SYMBOL_VOLUMEHIGH_REAL,SYMBOL_VOLUMELOW_REAL,SYMBOL_OPTION_STRIKE,SYMBOL_POINT,SYMBOL_TRADE_TICK_VALUE,SYMBOL_TRADE_TICK_VALUE_PROFIT,SYMBOL_TRADE_TICK_VALUE_LOSS,SYMBOL_TRADE_TICK_SIZE,SYMBOL_TRADE_CONTRACT_SIZE,SYMBOL_TRADE_ACCRUED_INTEREST,SYMBOL_TRADE_FACE_VALUE,SYMBOL_TRADE_LIQUIDITY_RATE,SYMBOL_VOLUME_MIN,SYMBOL_VOLUME_MAX,SYMBOL_VOLUME_STEP,SYMBOL_VOLUME_LIMIT,SYMBOL_SWAP_LONG,SYMBOL_SWAP_SHORT,SYMBOL_MARGIN_INITIAL,SYMBOL_MARGIN_MAINTENANCE,SYMBOL_SESSION_VOLUME,SYMBOL_SESSION_TURNOVER,SYMBOL_SESSION_INTEREST,SYMBOL_SESSION_BUY_ORDERS_VOLUME,SYMBOL_SESSION_SELL_ORDERS_VOLUME,SYMBOL_SESSION_OPEN,SYMBOL_SESSION_CLOSE,SYMBOL_SESSION_AW,SYMBOL_SESSION_PRICE_SETTLEMENT,SYMBOL_SESSION_PRICE_LIMIT_MIN,SYMBOL_SESSION_PRICE_LIMIT_MAX,SYMBOL_MARGIN_HEDGED,SYMBOL_PRICE_CHANGE,SYMBOL_PRICE_VOLATILITY,SYMBOL_PRICE_THEORETICAL,SYMBOL_PRICE_DELTA,SYMBOL_PRICE_THETA,SYMBOL_PRICE_GAMMA,SYMBOL_PRICE_VEGA,SYMBOL_PRICE_RHO,SYMBOL_PRICE_OMEGA,SYMBOL_PRICE_SENSITIVITY|})",
         "description": "MT5: SymbolInfoDouble()",
