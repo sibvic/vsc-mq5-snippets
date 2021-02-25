@@ -150,6 +150,12 @@
         "prefix": "AccountNumberMT5",
         "scope": "source.mq4"
     },
+    "AccountLeverageMT5": {
+        "body": "AccountInfoInteger(ACCOUNT_LEVERAGE)",
+        "description": "MT5: AccountLeverage()",
+        "prefix": "AccountLeverageMT5",
+        "scope": "source.mq4"
+    },
     "AccountInfoIntegerMT5": {
         "body": "AccountInfoInteger(${1|ACCOUNT_LOGIN,ACCOUNT_TRADE_MODE,ACCOUNT_LEVERAGE,ACCOUNT_LIMIT_ORDERS,ACCOUNT_MARGIN_SO_MODE,ACCOUNT_TRADE_ALLOWED,ACCOUNT_TRADE_EXPERT,ACCOUNT_MARGIN_MODE,ACCOUNT_CURRENCY_DIGITS,ACCOUNT_FIFO_CLOSE|})",
         "description": "MT5: AccountInfoInteger()",

@@ -17,6 +17,7 @@
 * AccountServerMT5
 * AccountNameMT5
 * AccountNumberMT5
+* AccountLeverageMT5
 
 ## 1.4
 
