@@ -8,7 +8,9 @@ Full list of available code snippets could be found [here](https://github.com/si
 
 [Injection of includes into MQL4/5](https://github.com/sibvic/MQ4Inject)
 
-[Automatic Trade Script Converter](https://www.microsoft.com/en-us/p/pinescript-converter/9mwmkf7bmqgn?activetab=pivot:overviewtab)
+[Automatic Trade Script Converter App](https://www.microsoft.com/en-us/p/pinescript-converter/9mwmkf7bmqgn?activetab=pivot:overviewtab) and [WebApp](https://convert.profitrobots.com)
+
+[Trade Copier Source](https://github.com/sibvic/trade_copier)
 
 ### Templates
 
