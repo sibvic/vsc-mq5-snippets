@@ -383,6 +383,15 @@
         "prefix": "wprMT5",
         "scope": "source.mq4"
     },
+    "osmaMT5": {
+        "body": 
+        [
+            "${1:handle} = iOsMA(${2:_Symbol}, ${3:_Period}, ${4:fast_ema_period}, ${5:slow_ema_period}, ${6:signal_period}, ${7|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|});"
+        ],
+        "description": "MT5: Create OsMA indicator",
+        "prefix": "osmaMT5",
+        "scope": "source.mq4"
+    },
     "StochasticOutput": {
         "body": 
         [
@@ -692,6 +701,24 @@
         ],
         "description": "MT5: Create arrow stream",
         "prefix": "createArrowStreamMT5",
+        "scope": "source.mq4"
+    },
+    "bidMT5": {
+        "body":
+        [
+            "SymbolInfoDouble(${1:Symbol()}, SYMBOL_BID)"
+        ],
+        "description": "MT5: Get bid price",
+        "prefix": "bidMT5",
+        "scope": "source.mq4"
+    },
+    "askMT5": {
+        "body":
+        [
+            "SymbolInfoDouble(${1:Symbol()}, SYMBOL_ASK)"
+        ],
+        "description": "MT5: Get ask price",
+        "prefix": "askMT5",
         "scope": "source.mq4"
     }
 }

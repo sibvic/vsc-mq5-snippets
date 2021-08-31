@@ -18,6 +18,9 @@
 * AccountNameMT5
 * AccountNumberMT5
 * AccountLeverageMT5
+* bidMT5
+* askMT5
+* osmaMT5
 
 ## 1.4
 
