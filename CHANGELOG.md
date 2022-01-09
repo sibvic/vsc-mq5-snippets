@@ -21,6 +21,8 @@
 * bidMT5
 * askMT5
 * osmaMT5
+* ichimokuMT5
+* trialMT5
 
 ## 1.4
 

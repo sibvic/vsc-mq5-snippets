@@ -291,6 +291,15 @@
         "prefix": "rsiMT5",
         "scope": "source.mq4"
     },
+    "ichimokuMT5": {
+        "body": 
+        [
+            "${1:handle} = iIchimoku(${2:_Symbol}, ${3:_Period}, ${4:tenkan_sen}, ${5:kijun_sen}, ${6:senkou_span_b});"
+        ],
+        "description": "MT5: iIchimoku",
+        "prefix": "ichimokuMT5",
+        "scope": "source.mq4"
+    },
     "bandsMT5": {
         "body": 
         [
@@ -719,6 +728,19 @@
         ],
         "description": "MT5: Get ask price",
         "prefix": "askMT5",
+        "scope": "source.mq4"
+    },
+    "trialMT5": {
+        "body":
+        [
+            "if (TimeCurrent() >= D'${1:2022}.${2:01}.${3:01}')",
+            "{",
+            "   Comment(\"You run out of trial period. Please contact ${4:your@email.com}\");",
+            "   return 0;",
+            "}"
+        ],
+        "description": "MT5: Trial check",
+        "prefix": "trialMT5",
         "scope": "source.mq4"
     }
 }
