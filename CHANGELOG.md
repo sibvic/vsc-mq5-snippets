@@ -23,6 +23,8 @@
 * osmaMT5
 * ichimokuMT5
 * trialMT5
+* ObjectSetIntegerMT5
+* ObjectSetDoubleMT5
 
 ## 1.4
 
