@@ -3,6 +3,7 @@
 ## 1.6
 
 * iMACDMT5
+* iEnvelopesMT5
 
 ## 1.5
 
