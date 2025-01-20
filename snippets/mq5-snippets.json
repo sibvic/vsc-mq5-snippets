@@ -19,6 +19,15 @@
         "prefix": "lowestArrayMT5",
         "scope": "source.mq4"
     },
+    "iMACDMT5": {
+        "body": 
+        [
+            "iMACD(${1:_Symbol}, ${2:_Period}, ${3:fast_ema_period}, ${4:slow_ema_period}, ${5:signal_period}, ${6|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|});"
+        ],
+        "description": "MT5: iMACD.",
+        "prefix": "iMACDMT5",
+        "scope": "source.mq4"
+    },
     "IndicatorRelease": {
         "body": "IndicatorRelease(${1:indicator_handle});",
         "description": "MT5: Releases indicator handler",

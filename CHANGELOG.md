@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6
+
+* iMACDMT5
+
 ## 1.5
 
 * AccountInfoDoubleMT5
