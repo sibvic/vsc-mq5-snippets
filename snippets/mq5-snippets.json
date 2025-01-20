@@ -28,6 +28,15 @@
         "prefix": "iMACDMT5",
         "scope": "source.mq4"
     },
+    "iEnvelopesMT5": {
+        "body": 
+        [
+            "iEnvelopes(${1:_Symbol}, ${2:_Period}, ${3:ma_period}, ${4:ma_shift}, ${5:|MODE_SMA,MODE_EMA,MODE_SMMA,MODE_LWMA|}, ${6|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|}, ${7:deviation});"
+        ],
+        "description": "MT5: iEnvelopes.",
+        "prefix": "iEnvelopesMT5",
+        "scope": "source.mq4"
+    },
     "IndicatorRelease": {
         "body": "IndicatorRelease(${1:indicator_handle});",
         "description": "MT5: Releases indicator handler",
