@@ -5,6 +5,7 @@
 * iMACDMT5
 * iEnvelopesMT5
 * iStochasticMT5
+* iMAMT5
 
 ## 1.5
 
