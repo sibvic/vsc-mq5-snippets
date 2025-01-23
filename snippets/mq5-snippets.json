@@ -31,7 +31,7 @@
     "iStochasticMT5": {
         "body": 
         [
-            "iStochastic(${1:_Symbol}, ${2:_Period}, ${3:Kperiod}, ${4:Dperiod}, ${5:slowing}, ${6:|MODE_SMA,MODE_EMA,MODE_SMMA,MODE_LWMA|}, ${7|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|}, ${8|MODE_MAIN,MODE_SIGNAL|}, ${9:shift});"
+            "iStochastic(${1:_Symbol}, ${2:_Period}, ${3:Kperiod}, ${4:Dperiod}, ${5:slowing}, ${6:|MODE_SMA,MODE_EMA,MODE_SMMA,MODE_LWMA|}, ${7|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|});"
         ],
         "description": "MT5: iStochastic.",
         "prefix": "iStochasticMT5",
@@ -40,7 +40,7 @@
     "iMAMT5": {
         "body": 
         [
-            "iMA(${1:_Symbol}, ${2:_Period}, ${3:ma_period}, ${4:ma_shift}, ${5|MODE_SMA,MODE_EMA,MODE_SMMA,MODE_LWMA|}, ${6|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|}, ${8|MODE_MAIN,MODE_SIGNAL|}, ${7:shift});"
+            "iMA(${1:_Symbol}, ${2:_Period}, ${3:ma_period}, ${4:ma_shift}, ${5|MODE_SMA,MODE_EMA,MODE_SMMA,MODE_LWMA|}, ${6|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|});"
         ],
         "description": "MT5: iMA.",
         "prefix": "iMAMT5",
