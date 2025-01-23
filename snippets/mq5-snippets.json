@@ -40,7 +40,7 @@
     "iMAMT5": {
         "body": 
         [
-            "iMA(${1:_Symbol}, ${2:_Period}, ${3:ma_period}, ${4:ma_shift}, ${5:|MODE_SMA,MODE_EMA,MODE_SMMA,MODE_LWMA|}, ${6|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|}, ${8|MODE_MAIN,MODE_SIGNAL|}, ${7:shift});"
+            "iMA(${1:_Symbol}, ${2:_Period}, ${3:ma_period}, ${4:ma_shift}, ${5|MODE_SMA,MODE_EMA,MODE_SMMA,MODE_LWMA|}, ${6|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|}, ${8|MODE_MAIN,MODE_SIGNAL|}, ${7:shift});"
         ],
         "description": "MT5: iMA.",
         "prefix": "iMAMT5",
@@ -49,7 +49,7 @@
     "iEnvelopesMT5": {
         "body": 
         [
-            "iEnvelopes(${1:_Symbol}, ${2:_Period}, ${3:ma_period}, ${4:ma_shift}, ${5:|MODE_SMA,MODE_EMA,MODE_SMMA,MODE_LWMA|}, ${6|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|}, ${7:deviation});"
+            "iEnvelopes(${1:_Symbol}, ${2:_Period}, ${3:ma_period}, ${4:ma_shift}, ${5|MODE_SMA,MODE_EMA,MODE_SMMA,MODE_LWMA|}, ${6|PRICE_CLOSE,PRICE_OPEN,PRICE_HIGH,PRICE_LOW,PRICE_MEDIAN,PRICE_TYPICAL,PRICE_WEIGHTED|}, ${7:deviation});"
         ],
         "description": "MT5: iEnvelopes.",
         "prefix": "iEnvelopesMT5",
